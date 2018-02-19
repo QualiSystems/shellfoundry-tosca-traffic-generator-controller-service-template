@@ -1,0 +1,35 @@
+tosca_definitions_version: tosca_simple_yaml_1_0
+
+metadata:
+  template_name: {{cookiecutter.model_name}}
+  template_author: {{cookiecutter.full_name}}
+  template_version: {{cookiecutter.version}}
+  template_icon: shell-icon.png
+
+description: >
+  TOSCA based service shell
+
+imports:
+  - cloudshell_standard: cloudshell_traffic_generator_controller_standard_1_0_0.yaml
+
+node_types:
+
+  vendor.resource.{{cookiecutter.model_name}}:
+    derived_from: cloudshell.nodes.TrafficGeneratorController
+    #properties:
+    #  my_property:
+    #    type: string          # optional values: string, integer, float, boolean, cloudshell.datatypes.Password
+    #    default: fast
+    #    description: Some attribute description
+    #    constraints:
+    #      - valid_values: [fast, slow]
+    #  Service Categories:
+    #    type: list
+    #    default: [My Category 1, My Category 2]    
+    artifacts:
+      icon:
+        file: shell-icon.png
+        type: tosca.artifacts.File
+      driver:
+        file: {{ cookiecutter.driver_name }}.zip
+        type: tosca.artifacts.File
