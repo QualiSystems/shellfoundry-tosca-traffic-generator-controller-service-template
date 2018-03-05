@@ -1,1 +1,28 @@
-<Driver Description="{{cookiecutter.project_short_description}}" MainClass="driver.{{cookiecutter.driver_name}}" Name="{{cookiecutter.driver_name}}" Version="1.0.0"/>
+<Driver Description="{{cookiecutter.project_short_description}}" MainClass="driver.{{cookiecutter.driver_name}}" Name="{{cookiecutter.driver_name}}" Version="1.0.0">
+    <Layout>
+        <Category Name="Hidden Commands">
+            <Command Name="cleanup_reservation" DisplayName="Cleanup Reservation" Tags="" Description="" EnableCancellation="true"/>
+        </Category>
+        <Command Name="load_configuration" DisplayName="Load Configuration" Description="Reserve ports and load configuration">
+            <Parameters>
+                <Parameter Name="config_file_location" Type="String" Mandatory="True"
+                           DisplayName="Config file location"
+                           Description="Full path to the configuration file"/>
+            </Parameters>
+        </Command>
+        <Command Name="start_traffic" DisplayName="Start Traffic" Description="Start test for current configuration">
+            <Parameters>
+                <Parameter Name="blocking" Type="Lookup" Mandatory="False" AllowedValues="True,False"
+                           DisplayName="Block" Description="Block the command until all the traffic finish to run"
+                           DefaultValue="False"/>
+            </Parameters>
+        </Command>
+        <Command Name="stop_traffic" DisplayName="Stop Traffic" Description="Stop running test"/>
+        <Command Name="get_statistics" DisplayName="Get Statistics" Description="Get test statistics">
+            <Parameters>
+                <Parameter Name="output_type" Type="Lookup" Mandatory="True" AllowedValues="csv,json"
+                           DisplayName="Output Type" DefaultValue="csv" Description="CSV or JSON"/>
+            </Parameters>
+        </Command>
+    </Layout>
+</Driver>
