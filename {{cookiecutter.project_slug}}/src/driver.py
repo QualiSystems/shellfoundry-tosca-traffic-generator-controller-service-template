@@ -51,3 +51,35 @@ class {{cookiecutter.driver_name}}(ResourceDriverInterface):
         :return:
         """
         pass
+    
+    def send_arp(self, context,):
+        """
+        Send arp
+        :param context:
+        :return:
+        """
+        pass
+    
+    def start_protocols(self, context,):
+        """
+        Start protocols
+        :param context:
+        :return:
+        """
+        pass
+    
+    def stop_protocols(self, context,):
+        """
+        Stop protocols
+        :param context:
+        :return:
+        """
+        pass
+    
+    def run_quick_test(self, context,):
+        """
+        Run quick test
+        :param context:
+        :return:
+        """
+        pass
