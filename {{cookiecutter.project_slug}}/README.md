@@ -138,7 +138,7 @@ This section describes how to import the **{{cookiecutter.display_name}}** and c
   
   3. Click **Import**.
   
-  4. In the dialog box, navigate to the shell's zip package, select it and click **Open**. <br><br>The shell is displayed in the **Shells** page and can be used by domain administrators in all CloudShell domains to create new inventory resources, as explained in [Adding Inventory Resources](http://help.quali.com/Online%20Help/9.0/Portal/Content/CSP/INVN/Add-Rsrc-Tmplt.htm?Highlight=adding%20inventory%20resources). 
+  4. In the dialog box, navigate to the shell's zip package, select it and click **Open**. <br><br>The controller shell is displayed in the **App/Service** page section of your blueprint, and can be used to run custom code and automation processes in the sandbox.  
 
 ### Offline installation of a shell
 
