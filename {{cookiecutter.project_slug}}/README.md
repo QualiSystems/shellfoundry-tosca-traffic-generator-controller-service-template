@@ -187,27 +187,6 @@ full path"/>`
 
 5. Restart the Execution Server.
 
-### Configuring a new resource
-This section explains how to create a new resource from the shell.
-
-In CloudShell, the component that models the device is called a resource. It is based on the shell that models the device and allows the CloudShell user and API to remotely control the device from CloudShell.
-
-You can also modify existing resources, see [Managing Resources in the Inventory](http://help.quali.com/Online%20Help/9.0/Portal/Content/CSP/INVN/Mng-Rsrc-in-Invnt.htm?Highlight=managing%20resources).
-
-**To create a resource for the device:**
-  1. In the CloudShell Portal, in the **Inventory** dashboard, click **Add New**. 
-     ![Image][2]
-     
-  2. From the list, select **{{cookiecutter.display_name}}**.
-  
-  3. Enter the **Name** and **IP address** of the device (if applicable).
-  
-  4. Click **Create**.
-  
-  5. In the **Resource** dialog box, enter the device's settings. For details, see [Device Name Attributes](#device-name-attributes). 
-  
-  6. Click **Continue**. <br><br>CloudShell validates the device’s settings and updates the new resource with the device’s structure (if the device has a structure).
-
 # Updating Python Dependencies for Shells
 This section explains how to update your Python dependencies folder. This is required when you upgrade a shell that uses new/updated dependencies. It applies to both online and offline dependencies.
 
