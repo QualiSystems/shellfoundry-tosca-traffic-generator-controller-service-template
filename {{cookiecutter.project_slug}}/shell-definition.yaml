@@ -10,7 +10,7 @@ description: >
   TOSCA based service shell
 
 imports:
-  - cloudshell_standard: cloudshell_traffic_generator_controller_standard_1_0_0.yaml
+  - cloudshell_standard: cloudshell_traffic_generator_controller_standard_2_0_0.yaml
 
 node_types:
 
