@@ -1,4 +1,4 @@
-<Driver Description="{{cookiecutter.project_short_description}}" MainClass="driver.{{cookiecutter.driver_name}}" Name="{{cookiecutter.driver_name}}" Version="1.0.0">
+<Driver Description="{{cookiecutter.project_short_description}}" MainClass="driver.{{cookiecutter.driver_name}}" Name="{{cookiecutter.driver_name}}" Version="1.0.0" PythonVersion="{{cookiecutter.python_version}}">
     <Layout>
         <Category Name="Hidden Commands">
             <Command Name="cleanup_reservation" DisplayName="Cleanup Reservation" Tags="" Description="" EnableCancellation="true"/>
